@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="UX Research Report on E-Waste Disposal Barriers in Ahmedabad and Gandhinagar - A data-driven analysis of behavioral and systematic barriers">
+<title>E-Waste Disposal Barriers | UX Research Report</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="top-nav"><div class="container">
+<div class="nav-brand">E-Waste Research</div>
+<ul class="nav-links">
+<li><a href="#context">Context</a></li>
+<li><a href="#awareness">Awareness</a></li>
+<li><a href="#disposal">Disposal</a></li>
+<li><a href="#privacy">Privacy</a></li>
+<li><a href="#stats">Statistics</a></li>
+<li><a href="#gaps">Gaps</a></li>
+<li><a href="#kiosk">Kiosk</a></li>
+<li><a href="#solutions">Solutions</a></li>
+</ul>
+</div></nav>
+
+<!-- HERO -->
+<section class="hero" id="hero"><div class="container"><div class="hero-content">
+<div class="hero-tag"><span class="dot"></span> UX Research Field Study</div>
+<h1>Understanding Behavioral &amp; Systematic Barriers in <span>Urban E-Waste Disposal</span></h1>
+<p class="hero-subtitle">A human-centric UX research study in Ahmedabad and Gandhinagar exploring why 95-98% of e-waste ends up in hazardous informal channels despite existing formal infrastructure.</p>
+<div class="hero-meta">
+<span>By: Akshat Panchasara</span>
+<span>Master's in Design | IUxD</span>
+<span>Dhirubhai Ambani University</span>
+<span>February 2026</span>
+</div>
+<div class="stat-counters" id="hero-counters"></div>
+</div></div></section>
+
+<!-- EXECUTIVE SUMMARY -->
+<section id="executive"><div class="container">
+<div class="section-header reveal"><span class="label-sm">Executive Summary</span>
+<h2>The Awareness-Action Paradox</h2>
+<p>Despite high awareness levels, formal e-waste recycling remains critically underutilized. Our mixed-methods research combining a consumer survey (n=82, with 75 validated in the UX report) and expert interviews with E.coli Waste Management Systems reveals a systemic failure rooted in behavioral barriers, not awareness deficits.</p>
+</div>
+<div class="card-grid" id="exec-cards"></div>
+</div></section>
+
+<!-- RESEARCH CONTEXT -->
+<section id="context"><div class="container">
+<div class="section-header reveal"><span class="label-sm">Research Context</span>
+<h2>Study Background &amp; Methodology</h2>
+<p>Ahmedabad (8.5M residents) and Gandhinagar (2M residents) generate 14,000-25,000 metric tons of e-waste annually, with only 2-8% entering formal recycling systems. The E-Waste Management Rules 2016 exist but enforcement remains weak.</p>
+</div>
+<div class="method-steps reveal" id="method-steps"></div>
+<div class="expert-quote reveal">
+<p>"We have installed processing capacity of 600 metric tons per month, but we only receive 10-15 metric tons. We're operating at under 2.5% capacity while 95% of e-waste goes through hazardous informal channels."</p>
+<p class="quote-source">— Senior Representative, E.coli Waste Management Systems Pvt. Ltd.</p>
+</div>
+<div class="card-grid reveal" id="stakeholder-cards"></div>
+</div></section>
+
+<!-- AWARENESS GAP -->
+<section id="awareness"><div class="container">
+<div class="section-header reveal"><span class="label-sm">Key Insight #1</span>
+<h2>The Awareness-Action Gap</h2>
+<p>87% of respondents have heard the term "E-waste" — but only 6.1% have actually recycled a device formally. This is not an awareness problem; it is an action pathway problem.</p>
+</div>
+<div class="chart-row reveal">
+<div class="chart-wrapper"><h3>E-Waste Term Awareness</h3><p class="chart-desc">Distribution of awareness levels (n=82)</p><div class="chart-area" id="chart-donut"></div></div>
+<div class="chart-wrapper"><h3>Knowledge of Disposal Services</h3><p class="chart-desc">Do you know where to safely dispose of e-waste?</p><div class="chart-area" id="chart-service"></div></div>
+</div>
+<div class="chart-wrapper reveal"><h3>Behavioral Flow: Awareness → Disposal → Motivation</h3><p class="chart-desc">Sankey diagram showing how awareness level connects to disposal behavior and underlying motivations</p><div class="chart-area" id="chart-sankey" style="min-height:450px"></div></div>
+</div></section>
+
+<!-- DISPOSAL BEHAVIOR -->
+<section id="disposal"><div class="container">
+<div class="section-header reveal"><span class="label-sm">Disposal Behavior</span>
+<h2>What People Actually Do With Old Devices</h2>
+<p>45% keep devices at home indefinitely. The informal sector's doorstep service eliminates friction, creating a default path of least resistance. Formal recycling barely registers in behavioral data.</p>
+</div>
+<div class="chart-wrapper reveal"><h3>Last Device Disposal Method</h3><p class="chart-desc">What did you do with the last electronic device you stopped using?</p><div class="chart-area" id="chart-disposal"></div></div>
+<div class="chart-row reveal">
+<div class="chart-wrapper"><h3>Disposal Method × Motivation</h3><p class="chart-desc">Cross-tabulation of what people did and why</p><div class="chart-area" id="chart-stacked"></div></div>
+<div class="chart-wrapper"><h3>Home Device Accumulation</h3><p class="chart-desc">92% have unused/broken electronics at home</p><div class="chart-area" id="chart-waffle"></div></div>
+</div>
+</div></section>
+
+<!-- E-WASTE IDENTIFICATION -->
+<section id="ewaste-id"><div class="container">
+<div class="section-header reveal"><span class="label-sm">E-Waste Identification</span>
+<h2>What People Think Counts as E-Waste</h2>
+<p>Statistically significant associations (p&lt;0.05) were found between awareness of the term "E-waste" and correctly identifying mobile phones (p=0.0106), laptops/computers (p=0.0111), and chargers/earphones (p=0.0049).</p>
+</div>
+<div class="chart-row reveal">
+<div class="chart-wrapper"><h3>E-Waste Item Recognition (Sunburst)</h3><p class="chart-desc">Items recognized as e-waste, segmented by awareness level</p><div class="chart-area" id="chart-sunburst" style="min-height:420px"></div></div>
+<div class="chart-wrapper"><h3>Perception of E-Waste Fate</h3><p class="chart-desc">What people think happens after collection</p><div class="chart-area" id="chart-treemap" style="min-height:420px"></div></div>
+</div>
+</div></section>
+
+<!-- DATA PRIVACY -->
+<section id="privacy"><div class="container">
+<div class="section-header reveal"><span class="label-sm">Key Insight #2</span>
+<h2>Data Privacy: A Genuine Trust Barrier</h2>
+<p>27% cite data/privacy concerns as the primary disposal motivation. 88% attempt data wiping before disposal — behavioral consistency validates this as a genuine barrier, not merely a stated concern. Yet 94% are unaware that formal recyclers offer certified data destruction.</p>
+</div>
+<div class="chart-row reveal">
+<div class="chart-wrapper"><h3>Disposal Decision Factors</h3><p class="chart-desc">Radar comparison of key behavioral drivers</p><div class="chart-area" id="chart-radar" style="min-height:400px"></div></div>
+<div class="chart-wrapper"><h3>Pre-Disposal Data Actions</h3><p class="chart-desc">What users do before giving away a device</p><div class="chart-area" id="chart-data-actions"></div></div>
+</div>
+</div></section>
+
+<!-- RECYCLING MOTIVATION -->
+<section id="motivation"><div class="container">
+<div class="section-header reveal"><span class="label-sm">Recycling Motivators</span>
+<h2>What Would Make People Recycle?</h2>
+<p>76% want door-to-door pickup — yet this service already exists and is unused. The perception-reality gap reveals that the problem isn't service availability, but service visibility and trust.</p>
+</div>
+<div class="chart-row reveal">
+<div class="chart-wrapper"><h3>Factors That Would Increase Recycling</h3><p class="chart-desc">Multi-select: up to two options per respondent</p><div class="chart-area" id="chart-lollipop"></div></div>
+<div class="chart-wrapper"><h3>Awareness Campaign Exposure</h3><p class="chart-desc">Have you seen or interacted with an e-waste awareness initiative?</p><div class="chart-area" id="chart-campaign"></div></div>
+</div>
+</div></section>
+
+<!-- STATISTICAL ANALYSIS -->
+<section id="stats"><div class="container">
+<div class="section-header reveal"><span class="label-sm">Statistical Analysis</span>
+<h2>Chi-Square &amp; T-Test Results</h2>
+<p>Rigorous statistical testing reveals which relationships between awareness, behavior, and knowledge are genuinely significant versus coincidental.</p>
+</div>
+<div class="chart-wrapper reveal"><h3>P-Value Heatmap: Variable Associations</h3><p class="chart-desc">Green = significant (p&lt;0.05), Red = not significant. Lower values indicate stronger associations.</p><div class="chart-area" id="chart-heatmap" style="min-height:450px"></div></div>
+<div class="card reveal" style="margin-top:1.5rem">
+<h3>Chi-Square Test Results</h3>
+<div style="overflow-x:auto"><table class="data-table" id="chi-table"><thead><tr><th>Variable Pair</th><th>χ² Statistic</th><th>p-Value</th><th>DoF</th><th>Result</th></tr></thead><tbody></tbody></table></div>
+</div>
+<div class="card reveal" style="margin-top:1.5rem" id="ttest-card"></div>
+</div></section>
+
+<!-- EXPERT INTERVIEW -->
+<section id="expert"><div class="container">
+<div class="section-header reveal"><span class="label-sm">Field Research</span>
+<h2>Expert Interview: E.coli Waste Management</h2>
+<p>A 3-hour contextual inquiry with a senior representative of one of the largest authorized e-waste recycling facilities serving Ahmedabad and Gandhinagar revealed critical system-level failures.</p>
+</div>
+<div class="card-grid reveal" id="expert-findings"></div>
+<div class="expert-quote reveal">
+<p>"Return of money is the primary consumer motivation. The informal sector offers ₹50-100 cash for old smartphones immediately at the doorstep. We offer free pickup with environmental responsibility — but that doesn't compete economically."</p>
+<p class="quote-source">— Senior Representative, E.coli Waste Management Systems Pvt. Ltd.</p>
+</div>
+</div></section>
+
+<!-- GAPS & ISSUES -->
+<section id="gaps"><div class="container">
+<div class="section-header reveal"><span class="label-sm">Gap Analysis</span>
+<h2>Identified Gaps &amp; Issues</h2>
+<p>Seven critical gaps emerged from triangulating survey data, expert interviews, and secondary research — revealing systemic failures at every level of the e-waste disposal ecosystem.</p>
+</div>
+<div class="card-grid" id="gap-cards"></div>
+</div></section>
+
+<!-- KIOSK DESIGN DIRECTIONS -->
+<section id="kiosk"><div class="container">
+<div class="section-header reveal"><span class="label-sm">Design Directions</span>
+<h2>E-Waste Kiosk: Feature Recommendations</h2>
+<p>Based on survey insights and behavioral analysis, the following feature recommendations address the specific barriers identified in this research. The kiosk should serve as both an educational tool and an action enabler.</p>
+</div>
+<div class="feature-list" id="kiosk-features"></div>
+</div></section>
+
+<!-- ALTERNATIVE CAMPAIGNS -->
+<section id="campaigns"><div class="container">
+<div class="section-header reveal"><span class="label-sm">Campaign Concepts</span>
+<h2>Alternative Awareness Campaigns</h2>
+<p>Three data-driven campaign concepts derived from survey insights, each targeting a specific behavioral barrier identified in the research.</p>
+</div>
+<div class="card-grid-3" id="campaign-cards"></div>
+</div></section>
+
+<!-- ALTERNATIVE SOLUTIONS -->
+<section id="solutions"><div class="container">
+<div class="section-header reveal"><span class="label-sm">Plausible Alternatives</span>
+<h2>Alternative Solutions</h2>
+<p>Beyond campaigns, these systemic interventions address root causes identified across the stakeholder ecosystem.</p>
+</div>
+<div class="solution-grid" id="solution-cards"></div>
+</div></section>
+
+<!-- CONCLUSION -->
+<section id="conclusion"><div class="container">
+<div class="section-header reveal"><span class="label-sm">Conclusion</span>
+<h2>Key Takeaways</h2>
+<p>This research reveals that the e-waste disposal crisis in Ahmedabad and Gandhinagar is not a problem of awareness — it is a problem of action pathway design. The formal system fails not because people don't care, but because it doesn't meet them where they are.</p>
+</div>
+<div id="conclusion-insights" class="reveal"></div>
+</div></section>
+
+<!-- REFERENCES -->
+<section id="references"><div class="container">
+<div class="section-header reveal"><span class="label-sm">Bibliography</span><h2>References</h2></div>
+<ul class="ref-list reveal">
+<li>Gujarat Pollution Control Board (GPCB). (2024). Annual Report 2023-24: E-Waste Management Status in Gujarat.</li>
+<li>Gujarat Ecology Commission. (2024). Consumer Awareness Survey: E-Waste Disposal and Recycling Knowledge. Survey of 1,800 households.</li>
+<li>Indian Institute of Public Health - Gandhinagar. (2024). Health Impact Assessment: E-Waste Exposure in Ahmedabad Informal Recycling Clusters.</li>
+<li>Toxic Links. (2023). Informal E-Waste Sector Assessment in Indian Cities.</li>
+<li>Central Pollution Control Board. (2024). Registry of Authorized E-Waste Recyclers.</li>
+<li>CPCB. (2023). E-Waste Management in India: Current Status and Projected Trends.</li>
+<li>Ministry of Environment, Forest and Climate Change. (2024). National E-Waste Statistics Report.</li>
+<li>Ahmedabad Municipal Corporation. (2023). Solid Waste Management Profile.</li>
+<li>NEERI. (2023). Heavy Metal Contamination in Soil and Groundwater: E-Waste Recycling Hotspots.</li>
+<li>E.coli Waste Management Systems Pvt. Ltd. (2026). Operational Data and Interview Responses.</li>
+</ul>
+</div></section>
+
+<footer class="site-footer"><div class="container">
+<p><strong>E-Waste Disposal Barriers</strong> — UX Research Report</p>
+<p>Akshat Panchasara | Dhirubhai Ambani University | Module: Design Thinking: UX Research</p>
+</div></footer>
+
+<div class="d3-tooltip" id="tooltip"></div>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="data.js"></script>
+<script src="script.js"></script>
+<script src="charts.js"></script>
+</body>
+</html>
